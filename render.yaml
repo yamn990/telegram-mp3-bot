@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: telegram-mp3-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python main.py"
