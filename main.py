@@ -22,6 +22,7 @@ async def search_and_send(update: Update, context: ContextTypes.DEFAULT_TYPE):
         'noplaylist': True,
         'quiet': True,
         'outtmpl': os.path.join(tempfile.gettempdir(), '%(title)s.%(ext)s'),
+        'cookiefile': 'cookies/youtube.com_cookies.txt',  # ✅ استخدام الكوكيز هنا
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
             'preferredcodec': 'mp3',
